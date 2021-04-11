@@ -97,3 +97,31 @@ button {
     color: hsl(0, 0%, 95%);
     border: 1px solid hsl(0, 0%, 95%);
 }
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #sedans {
+        border-radius: 10px 10px 0 0;
+    }
+
+    #luxury {
+        border-radius: 0 0 10px 10px;
+    }
+  }
+
+@media only screen and (min-device-width: 426px) and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 4rem auto;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+}
